@@ -1,0 +1,36 @@
+h1{
+    font-size: 200%;
+    color: red;
+
+}
+
+img{
+    height: 200px;
+    background-color: white;
+
+
+}
+
+.bacon{
+    background-color: green;
+   
+}
+
+.broccolli{
+    background-color: red;
+   
+ 
+}
+
+.HeadingOnes{
+    background-color: blue;
+}
+
+#MainHeading{
+    background-color: black;
+}
+
+.vegetable{
+    background-color: red;
+    border-radius: 100px;
+}

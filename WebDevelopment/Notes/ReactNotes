@@ -1,0 +1,2 @@
+The App.js file is the one that controls what is visible on the webpage
+The index.js is the one that is the starting point of the react application. It handles the rendering of the react by passing ReactDOM.render(<mainApp>)

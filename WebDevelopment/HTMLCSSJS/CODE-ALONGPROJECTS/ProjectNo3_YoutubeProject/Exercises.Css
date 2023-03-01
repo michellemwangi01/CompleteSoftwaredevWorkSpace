@@ -1,0 +1,46 @@
+input{
+    display: block;
+    margin: 5px;
+}
+
+.survey{
+    display: inline-block;
+    width: 300px;
+    vertical-align:middle;
+}
+
+p{
+    width: 200px;
+    display: inline-block;
+
+}
+
+.buttons{
+    height: 55.2px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.SignupForms{
+    width: 500px;
+   
+}
+
+.NamesForm{
+    display: inline-block;
+    padding: 10px;
+}
+
+.emailForm{
+    width: 365px;
+    padding: 10px;
+}
+.emailbutton{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    background-color: rgb(95, 196, 236);
+    width: 395px;
+}

@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+body{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}.gridContainer{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr ;
+    row-gap: 30px;
+    column-gap: 10px;
+}
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+   
+}
+.YoutubeLogo{
+    display: inline-flex;
+    flex-grow: 0;
+    justify-content: left;
+    width: 150px;
+}
+.YoutubeLogoImage{
+    width: 80%;
+   
+}
+.searchBar{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+.thesearchBar{
+    width: 50%;
+    padding: 5px;
+    font-size: 20px;
+    border-radius:  20px 0px 3px 20px ;
+    max-width: 500px;
+}
+.navbarMenus{
+    display: flex;
+    flex-grow: 0;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+
+}
+.p{
+    padding: 0;
+}
+.channelProfPic{
+    margin-top: 5px;
+    width: 50px;
+    border-radius: 50px;
+}
+.VideoPreviewDetails{
+    display: inline-block;
+    width: 80%;
+}
+
+.divchannelProfPic{
+    display: inline-block;
+    vertical-align: top;
+}
+.ProfPicandDetails{
+    display: block;
+}
+.thumbnail{
+    width: 100%; 
+  
+}
+.search-bar{
+    font-size: 20px;
+   border-radius: 5px;
+   border:1px black solid;
+    box-shadow: 1px 1px;
+    color: grey;
+    padding: 5px;
+}
+.VideoPreview{
+   
+    display: inline-block;
+    vertical-align: top;
+ 
+}
+.videoTitle,
+.videoStats {
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+.videoAuthor {
+    font-size: 13px;
+}
+.thumbnail{
+    display: block;
+}
+::placeholder{
+    padding: 20px 20px;
+    
+}

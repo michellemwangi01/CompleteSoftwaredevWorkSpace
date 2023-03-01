@@ -1,0 +1,27 @@
+.Icons{
+    width: 30px;
+    padding-right: 20px;
+    margin-left: 20px;
+   
+}
+.voicesearchicon{
+    border: solid 1px grey;
+    border-radius: 50%;
+    padding: 0; 
+    margin-left: 5px;
+    background-color: lightgrey;
+  
+   
+}
+.menuIcons{
+    margin: 0;
+    
+}
+
+.voicesearchiconButton{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+

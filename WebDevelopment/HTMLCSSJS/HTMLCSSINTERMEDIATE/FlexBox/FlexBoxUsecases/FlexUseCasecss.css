@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;  
+}
+.navbarandBanner{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(/UdemyWebDevBootcamp/CODE-ALONGPROJECTS/ProjectNo1/Images/DarkBlack3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbarContainer{
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+.logoContainer{
+    width: 250px;
+    display: inline-flex;
+    justify-content: flex-end;
+   flex-wrap: wrap;
+   align-items: center;
+   
+}
+.logoImage{
+    height: 150px;
+    
+}
+.navbar{
+    height: 150px;
+    width: 500px;
+    color:  wheat;
+   display: inline-flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   align-items: center;
+   
+ 
+}
+.navbarItems{
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+   flex-basis: auto;
+   font-size: 20px;
+   margin: 0 10px;
+}
+
+.navbarItems:hover{
+    color: beige;
+}
+.item-4{
+    order: 4;
+}
+.item-3{
+    order: 3;
+}
+.item-2{
+    order: 2;
+}
+.item-1{
+    order: 1;
+}
+.banner{
+    padding-top: 5rem;
+    height: 70vh;
+    display: flex;
+    color: wheat;
+    justify-content: center;
+    align-items: flex-start;
+}
+.bannerContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    font-size: 5rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+}
+p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: beige;
+}
+.bannerButtons{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+button{
+    width: 200px;
+    border: solid 2px rgb(238, 161, 18);
+    border-radius: 25px;
+    margin: 0 10px;
+    font-size: 1.15rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: transparent;  
+    color: beige; 
+    cursor: pointer; 
+    transition: 0.5s; 
+}
+span{
+    background: #e0c16e;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    z-index: -1;
+   transition: 0.4s;
+}
+button:hover span{
+    width: 100%;
+    }
+button:hover{
+    border-color: wheat;
+    width: 30%;
+    color: #e0c16e;
+   
+
+}
+
+

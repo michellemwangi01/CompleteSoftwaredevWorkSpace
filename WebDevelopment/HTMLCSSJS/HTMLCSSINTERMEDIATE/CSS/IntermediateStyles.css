@@ -1,0 +1,155 @@
+body{
+    background-color: white;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+
+h1{
+    font-size: 3rem;
+    color: #f26262;
+    font-family: vivaldi;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: normal;
+    color:#f26262;
+}
+
+h3{
+    color: #FFBABA;
+}
+
+.top-container{
+    background-color: #FFBABA;
+    margin: 0 auto;
+    width: 100%;
+    height: 100;
+    border: none;
+    border-color: black;
+    padding: 20px;
+
+}
+
+
+.top-container h1{
+    margin: 0 auto;
+}
+
+#bottomCloud{
+    position: absolute;
+}
+
+#topCloud{
+    position: relative;
+    left: 200px;
+
+}
+.profile{
+    border-radius: 50%;
+   
+   
+}
+
+hr{
+    border: dotted;
+    border-bottom: none;
+    width: 4%;
+    color: #f26262;
+    margin: 50px auto;
+    border-width: 5px;
+}
+.skill-row{
+    width:50%;
+    margin: 30px auto;
+    
+    text-align: left;
+    line-height: 2;
+    
+}
+
+.skill-row image{
+    width: 25%
+}
+
+.developer{
+    width: 25%;
+    border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   float: left;
+   margin-right: 30px;
+}
+
+.ProjectManager{
+    width: 25%;
+    border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   float: right;
+   padding-top: 20px;
+   margin-left: 20px;
+}
+
+#reachOut{
+    font-weight: normal;
+    text-align: center;
+}
+.contact-me{
+    height: 100;
+}
+
+.btn {
+    background: #ffbaba;
+    background-image: -webkit-linear-gradient(top, #ffbaba, #FFBABA);
+    background-image: -moz-linear-gradient(top, #ffbaba, #FFBABA);
+    background-image: -ms-linear-gradient(top, #ffbaba, #FFBABA);
+    background-image: -o-linear-gradient(top, #ffbaba, #FFBABA);
+    background-image: linear-gradient(to bottom, #ffbaba, #FFBABA);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Georgia;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 50px auto;
+  }
+  
+  .btn:hover {
+    background: #ddc7c7;
+    text-decoration: none;
+  }
+
+  .bottom-container{
+    margin: 50px 0 0 0;
+    background-color: #FFBABA;
+    padding-bottom:16px;
+    padding-top: 25px;
+    
+ }
+
+ .buttonDiv{
+    height: 100px;
+    
+ }
+
+ a{
+    margin: auto;
+    color: #f26262;
+    margin: auto 10px;
+    text-decoration: none;
+ }
+
+ a:hover{
+    color: rgb(71, 6, 19);
+ }
+
+ .copyright{
+    color: whitesmoke;
+    font-size: 0.75rem;
+    padding: 10px;
+ }

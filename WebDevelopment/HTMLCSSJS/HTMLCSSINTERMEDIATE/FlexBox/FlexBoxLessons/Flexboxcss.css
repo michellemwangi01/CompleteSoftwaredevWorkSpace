@@ -1,0 +1,61 @@
+body{
+    margin:5px;
+
+}
+
+.Flexcontainer{
+    display: flex;
+    background-color: beige;
+    flex-direction: row;
+    overflow: visible;
+height: 400px;
+align-items: center;
+}
+
+.Flex-item{
+      color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 10px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    
+    
+}
+
+.Item-1{
+    background-color: rgb(237, 59, 59);
+    flex-shrink: 5;
+ 
+}
+.Item-2{
+    background-color: orange;
+   flex-grow: 3;
+   
+}
+.Item-3{
+    background-color: yellow;
+   flex-basis: 200px;
+   flex-grow: 10;;
+    
+}
+.Item-4{
+    background-color: rgb(58, 189, 58);
+    flex: 2 3 200px;
+}
+.Item-5{
+    background-color: blue;
+}
+.Item-6{
+    background-color: indigo;
+}
+.Item-7{
+    background-color: violet;
+}
+.Item-8{
+    background-color: pink;
+}
+.Item-9{
+    background-color: skyblue;
+}

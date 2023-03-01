@@ -1,0 +1,53 @@
+------------------GUIDE----------
+…or create a new repository on the command line
+echo "# airlinereservationsystem" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/michellemwangi01/airlinereservationsystem.git
+git push -u origin main
+
+------------------------------------------------------------
+…or push an existing repository from the command line
+git remote add origin https://github.com/michellemwangi01/airlinereservationsystem.git
+git branch -M main
+git push -u origin main
+
+---------------------------------------
+PULLING FROM REPO THE FIRST TIME
+$git fetch origin
+$ git pull origin master --allow-unrelated-histories
+
+
+it status // check if there's any uncommited changes
+
+git commit -m "add a comment in here" //commits while adding comments.
+
+git push //pushes the changes to the github repository
+
+git add . //
+
+rm -rf .git //uninitialize a git repo by removing the .git file
+
+change GIT remote URL https://github.com/michellemwangi01/PersonalResume.git
+
+
+initialize repository on VScode - git init
+
+specify the remote URL to push or commit changes to git add remote enterURLofgithubrepo
+
+FrontendWebDevProjects
+
+
+const petNames = function(fname, lname){
+		console.log(fname);
+		console.log(lname);
+	}
+	
+	function petNames (fname, lname){
+		console.log(fname);
+		console.log(lname);
+	}
+
+

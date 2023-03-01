@@ -1,0 +1,38 @@
+img {
+    border-radius: 150px;
+    float: left;
+    height: 100px;
+  }
+
+  body{
+    background-color: rgb(226, 221, 223);
+  }
+
+  hr{
+
+    border-style: none;
+    border-bottom: dotted ;
+    border-color: black;
+    height: 0px;
+    width: 5%;
+    border-width: 5px;
+
+  }
+
+  h1{
+    color: #0b8585;
+
+  }
+
+  h2{
+    color: #317878;
+  }
+
+  h3{
+    display: block;
+    font-size: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-weight: bold;
+    color: #1ab5b5;
+  }
