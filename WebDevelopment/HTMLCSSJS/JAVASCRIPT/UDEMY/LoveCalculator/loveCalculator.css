@@ -1,0 +1,92 @@
+
+body{
+    background-image: linear-gradient( Black, grey) ;
+    height: 300vh;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+#masterDiv{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+
+}
+#BMICalculatorDiv, #LeapYearCalculatorDiv, #loveCalculatorDiv, #fizzBuzzDiv, #fibonacciDiv{
+    background-color: rgb(169, 163, 239);
+    min-height: 310px;
+    width: 400px;
+    padding: 1rem;
+    margin: 5px;
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    
+
+}
+#BMICalculatorDiv:hover, #LeapYearCalculatorDiv:hover, #loveCalculatorDiv:hover, #fibonacciDiv:hover, #fizzBuzzDiv:hover{
+    transform: scale(1.02);
+    
+}
+
+#LeapYearCalculatorDiv{
+    background-color: rgb(233, 111, 242);
+
+}
+#loveCalculatorDiv{
+    background-color: pink;
+
+    
+}
+#fizzBuzzDiv{
+    background-color: rgb(173, 206, 123);
+}
+#fibonacciDiv{
+    background-color: bisque;
+}
+
+.inputLabel{
+    padding: 10px 5px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+    border: 2px solid black;
+    border-width: 2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    
+}
+
+button:hover{
+    box-shadow: 10px;
+}
+p{
+    color: black;
+    font-size: 17px ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2{
+    font-weight:bold;
+}
+
+h4{
+    font-weight: large;
+}
+#fizzBuzzresultsDiv{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+
+}
+
