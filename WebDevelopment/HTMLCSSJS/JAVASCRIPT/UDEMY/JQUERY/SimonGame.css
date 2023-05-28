@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(33, 32, 32);
+
+}
+#masterDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tiles{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    border: bisque 2px solid;
+    box-shadow: 5px;
+    margin-bottom: 5px; 
+ }
+ #blue{
+    background-color: blue;
+ }
+ #green{
+  background-color: green;  
+ }
+ #yellow{
+    background-color: yellow;
+ }
+ #red{
+    background-color: red;
+ }
+ #tilesDiv{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+ }
+ .simonHeading{
+    color: bisque;
+    text-align: center;
+    font-family:cursive;
+    font-size: xxx-large;
+ }
+ .footer{
+    margin-top: 50px;
+    text-align: center;
+    color: bisque;
+ }
+ .activatedButton{
+    box-shadow: 0 5px 5px 0 #DBEDF3;
+    opacity: 50%;
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.05);
+ }
+ .startButton{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: white 2px solid;
+    font-size: 1rem;
+    text-align: center;
+    width: 25%;
+
+ }
+ .startButton:hover{
+    box-shadow: 10px white;
+    color: black;
+    background-color: white;
+ }
+ .buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }

@@ -30,6 +30,8 @@ public class mainFrame extends JFrame {
         JLabel resultLabel = new JLabel("result");
         JTextField resultTextField = new JTextField(10);
         JButton addButton = new JButton("Add");
+        ImageIcon icon = new ImageIcon("Images/mathImage.avif");
+        JLabel label3 = new JLabel(icon);
 
         panel.add(label);
         panel.add(textField);
@@ -38,6 +40,7 @@ public class mainFrame extends JFrame {
         panel.add(addButton);
         panel.add(resultLabel);
         panel.add(resultTextField);
+        panel.add(label3);
 
         mainFrame.getContentPane().add(BorderLayout.CENTER, panel);
         mainFrame.getContentPane().add(BorderLayout.NORTH, mbar);

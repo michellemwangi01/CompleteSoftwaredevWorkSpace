@@ -1,7 +1,248 @@
 //----------------------------GENERAL-----------------------------
+//------------------------ COPYRIGHTS ----------------------
+
+const Copyright = document.createElement('p');
+Copyright.innerHTML = 'Built on JAVASCRIPT  &copy; 2023 Michelle Mwangi';
+Copyright.id = "copyrights";
+//call back fucntion is the func
 const masterDiv = document.createElement("div");
 masterDiv.setAttribute("id", "masterDiv");
 document.body.appendChild(masterDiv);
+
+//--------------------------------- THE DICE GAME --------------------------------------
+const diceGameDiv = document.createElement("div");
+const diceTitle = document.createElement("h1");
+const diceSubTitle = document.createElement("h4");
+const dicePlayer1 = document.createElement("h5");
+const dicePlayer2 = document.createElement("h5");
+const diceGamePlayersDiv = document.createElement("div");
+const diceGamePlayer1Div = document.createElement("div");
+const diceGamePlayer2Div = document.createElement("div");
+const diceResetButton = document.createElement("button");
+const img1 = document.createElement("img");
+const img2 = document.createElement("img");
+const img3 = document.createElement("img");
+const img4 = document.createElement("img");
+const img5 = document.createElement("img");
+const img6 = document.createElement("img");
+masterDiv.appendChild(diceGameDiv);
+img1.src = "./DiceImages/dice1.png"
+img2.src = "./DiceImages/dice2.png"
+
+diceGameDiv.appendChild(diceTitle);
+diceGameDiv.appendChild(diceSubTitle);
+diceGameDiv.appendChild(diceGamePlayersDiv);
+
+diceGamePlayersDiv.appendChild(diceGamePlayer1Div);
+diceGamePlayersDiv.appendChild(diceGamePlayer2Div);
+diceGamePlayer1Div.appendChild(dicePlayer1);
+diceGamePlayer1Div.appendChild(img1);
+diceGamePlayer2Div.appendChild(dicePlayer2);
+diceGamePlayer2Div.appendChild(img2);
+diceGameDiv.appendChild(diceResetButton);
+
+
+diceGamePlayersDiv.id = "theDiceGamePlayersDiv"
+diceGameDiv.id = "theDiceGameDiv";
+diceGameDiv.className = "inputLabel";
+
+diceTitle.innerText = "Let's Play!";
+diceSubTitle.innerText = "Player with larger number wins!"
+diceSubTitle.style.color = "bisque";
+diceSubTitle.style.fontWeight = "lighter";
+dicePlayer1.innerText = "Player 1";
+dicePlayer2.innerText = "Player 2";
+diceResetButton.innerHTML = "&#8635;";
+diceResetButton.id = "diceResetButton";
+
+function diceRollPlayers(){
+    const randomNumber = Math.floor(Math.random()*7); 
+        console.log(randomNumber)
+    switch (randomNumber) {
+        case 1:
+            img1.src = "./DiceImages/dice1.png"
+            break;
+        case 2:
+            img1.src = "./DiceImages/dice2.png"
+            break;
+        case 3:
+            img1.src = "./DiceImages/dice3.png"
+            break;
+        case 4:
+            img1.src = "./DiceImages/dice4.png"
+            break;
+        case 5:
+            img1.src = "./DiceImages/dice5.png"
+            break;
+        case 6:
+            img1.src = "./DiceImages/dice6.png"
+            break;
+    
+        default:
+            img1.src = "./DiceImages/dice1.png"
+            break;
+    }
+
+    const randomNumber2 = Math.ceil(Math.random()*6); 
+        console.log(randomNumber2);
+    switch (randomNumber2) {
+        case 1:
+            img2.src = "./DiceImages/dice1.png"
+            break;
+        case 2:
+            img2.src = "./DiceImages/dice2.png"
+            break;
+        case 3:
+            img2.src = "./DiceImages/dice3.png"
+            break;
+        case 4:
+            img2.src = "./DiceImages/dice4.png"
+            break;
+        case 5:
+            img2.src = "./DiceImages/dice5.png"
+            break;
+        case 6:
+            img2.src = "./DiceImages/dice6.png"
+            break;
+    
+        default:
+            img2.src = "./DiceImages/dice2.png"
+            break;
+    }
+
+    if (randomNumber > randomNumber2) {
+        diceTitle.innerText = "Player 1 Wins!"
+        
+    } else if (randomNumber < randomNumber2) {
+        diceTitle.innerText = "Player 2 Wins!"
+        
+    }else if (randomNumber === randomNumber2){
+        diceTitle.innerText = "Player 1 and 2 Draw!"
+    }
+}
+
+diceResetButton.addEventListener("click", function(event){
+    //call back fucntion is the function that is passed into the addEventListener Nethod, 
+    //this method takes in 2 paramenters, the typeOfEvent, and the callBackFunction. 
+    //The callBack funtion usually carries (in an object) the event details of the typeOfEvent that has just happened.
+    //i.e. if it was a click, i.e what key was clicked? what part of the screen was clicked?, duration of the click? was the ctrl key also pressed?
+    //this object can be passed into the callBack function as a paramenter with any name, usually (event, e, evt)
+    //you can then access the event details using the dot notation. i.e. event.Type
+    diceRollPlayers();
+    console.log(event);
+})
+
+
+
+
+
+//---------------------------------- DRUM KIT ------------------------
+const drumKitDiv = document.createElement("div");
+const drumKitSetDiv = document.createElement("div");
+const drumKitTitle = document.createElement("h1");
+const wDrum  = document.createElement("button");
+const aDrum  = document.createElement("button");
+const sDrum  = document.createElement("button");
+const dDrum  = document.createElement("button");
+const jDrum  = document.createElement("button");
+const kDrum  = document.createElement("button");
+const lDrum  = document.createElement("button");
+
+masterDiv.appendChild(drumKitDiv);
+drumKitDiv.appendChild(drumKitTitle);
+drumKitDiv.appendChild(drumKitSetDiv);
+drumKitSetDiv.appendChild(wDrum);
+drumKitSetDiv.appendChild(aDrum);
+drumKitSetDiv.appendChild(sDrum);
+drumKitSetDiv.appendChild(dDrum);
+drumKitSetDiv.appendChild(jDrum);
+drumKitSetDiv.appendChild(kDrum);
+drumKitSetDiv.appendChild(lDrum);
+
+drumKitDiv.id = "drumKitDiv";
+
+drumKitTitle.innerText = "Drum 🥁 Kit";
+wDrum.className ="w drum";
+wDrum.innerText = "w";
+aDrum.className = "a drum";
+aDrum.innerText = "a";
+sDrum.className = "s drum";
+sDrum.innerText = "s";
+dDrum.className = "d drum";
+dDrum.innerText = "d";
+jDrum.className = "j drum";
+jDrum.innerText = "j";
+kDrum.className = "k drum";
+kDrum.innerText = "k";
+lDrum.className = "l drum";
+lDrum.innerText = "l";
+
+function buttonAnimation(currentKey){
+    var activeButton = document.querySelector("." + currentKey)
+    activeButton.classList.add("pressed");
+    setTimeout(() => {
+        activeButton.classList.remove("pressed");
+        }, 200);
+}
+
+
+var numberofDrums = document.querySelectorAll(".drum").length;
+for (var i = 0; i<numberofDrums; i++){
+    document.querySelectorAll(".drum")[i].addEventListener("click", function(){
+        console.log(i);
+      
+        
+        switch (this.innerText) {
+            case "w":
+                var audio = new Audio('DrumSounds/tom-1.mp3');
+                audio.play();
+                buttonAnimation("w");
+                break;
+
+            case "a":
+                var audio = new Audio('DrumSounds/tom-2.mp3');
+                audio.play();
+                buttonAnimation("a");
+                break;
+
+            case "s":
+                var audio = new Audio('DrumSounds/tom-3.mp3');
+                audio.play();
+                buttonAnimation("s");
+                break;
+
+            case "d":
+                var audio = new Audio('DrumSounds/tom-4.mp3');
+                audio.play();
+                buttonAnimation("d");
+                break;
+
+            case "j":
+                var audio = new Audio('DrumSounds/snare.mp3');
+                audio.play();
+                buttonAnimation("j");
+                break;
+
+            case "k":
+                var audio = new Audio('DrumSounds/crash.mp3');
+                audio.play();
+                buttonAnimation("k");
+                break;
+
+            case "l":
+                var audio = new Audio('DrumSounds/kick-bass.mp3');
+                audio.play();
+                buttonAnimation("l");
+                break;
+    
+            default:
+                break;
+        }
+        
+        
+        
+    })
+}
 
 //----------------------------LOVE CALCULATOR-----------------------------
 //----------------------Create elements and their attributes-----------------------------
@@ -394,5 +635,18 @@ function fibonacci(){
 fibonacciButton.addEventListener("click", function(){
     fibonacci();
 })
+
+document.body.appendChild(Copyright);
+
+
+
+
+
+
+
+
+
+
+
 
 
