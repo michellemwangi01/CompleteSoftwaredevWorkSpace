@@ -1,13 +1,13 @@
 
 body{
-    background-image: linear-gradient( grey, rgb(55, 50, 50)) ;
+    background-image: linear-gradient( black, rgb(55, 50, 50)) ;
     height: auto;
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif ;
 }
 #masterDiv{
     
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -22,7 +22,7 @@ body{
     width: 400px;
     padding: 1rem;
     margin: 5px;
-    border: 1px black solid;
+    border: 1px white solid;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.2s ease-in-out;
@@ -31,6 +31,7 @@ body{
 }
 #drumKitDiv:hover, #theDiceGameDiv:hover, #BMICalculatorDiv:hover, #LeapYearCalculatorDiv:hover, #loveCalculatorDiv:hover, #fibonacciDiv:hover, #fizzBuzzDiv:hover{
     transform: scale(1.02);
+    box-shadow: 5px 5px 5   px 5px rgba(whitesmoke, white);
     
 }
 #drumKitDiv{
