@@ -1,19 +1,21 @@
 body{
-    background-color: rgb(33, 32, 32);
+    background-color: black;
 
 }
 #masterDiv{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    max-width: 60%;
+    margin: auto;
 }
 .tiles{
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 10px;
     border: bisque 2px solid;
     box-shadow: 5px;
-    margin-bottom: 5px; 
+    margin-bottom: 20px; 
  }
  #blue{
     background-color: blue;
@@ -57,8 +59,8 @@ body{
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
-    background-color: transparent;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     border: white 2px solid;
     font-size: 1rem;
     text-align: center;
@@ -67,8 +69,8 @@ body{
  }
  .startButton:hover{
     box-shadow: 10px white;
-    color: black;
-    background-color: white;
+    color: whitesmoke;
+    background-color: transparent;
  }
  .buttonDiv{
     display: flex;
